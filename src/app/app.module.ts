@@ -5,20 +5,37 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule} from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
+import { LoadpicComponent } from './components/loadpic/loadpic.component';
+import { LoginComponent } from './components/login/login.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import { AlphabetComponent } from './components/alphabet/alphabet.component'; 
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MyInterceptorService } from './services/myinterceptor.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    LoadpicComponent,
+    LoginComponent,
+    AlphabetComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
-  providers: [],
+  providers: [{provide: HTTP_INTERCEPTORS, useClass: MyInterceptorService, multi:true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,8 @@
+<!-- se data.length === 0 non mostrare il div e quindi tutto il contenuto -->
+<div *ngIf="data.length">
+    <!-- | e' sempre una pipe ma nel template e funziona come la pipe sui observable, esistono delle gia' fatte tipo uppercase -->
+    <!-- che trasforma tutto in maiuscolo -->
+    <!-- bisogna legare l'evento del click del bottone con l'emissione dell'event emitter -->
+    <button *ngFor="let letter of alphabet" (click)="selectLetter(letter)"> {{ letter | uppercase }} </button>
+</div>
+

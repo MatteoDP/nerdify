@@ -3,6 +3,14 @@ import { Injectable } from '@angular/core';
 import { from, Observable } from 'rxjs';
 import { user } from '../user';
 
+import { HttpHeaders } from '@angular/common/http';
+
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type':  'application/json',
+    'Authorization': 'Basic ' + btoa('admin:secret')
+  })
+};
 
 
 @Injectable({
@@ -10,7 +18,7 @@ import { user } from '../user';
 })
 export class LoginService {
 
-  private url : string = "http://localhost:3000/users";
+  private url : string = "http://localhost:8080/usersx";
 
   constructor(private http: HttpClient) {}
 

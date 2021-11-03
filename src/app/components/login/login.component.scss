@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    align-items: center;
+    border: 0px solid red; 
+    flex-wrap: wrap;
+    height: 99%;
+}
+
+.item *{
+    
+    margin: auto;
+    
+
+}
+
+.item{
+    border: 0px solid black;
+    width:100%;
+    display: flex;
+    margin: auto;
+}
+
+.item button{
+    color:black;
+    font-size:1.2em;
+    border: 3px solid orange;
+    border-radius: 10px;
+    padding: 10px;
+    width:40%;
+    background: pink;
+}
+
+inputn{
+    padding: 1em;
+    margin: 20px;
+    border-radius: 0.5em;
+    border: 1px solid gray;
+}

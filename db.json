@@ -7,8 +7,42 @@
             "password": "password",
             "pic": "url",
             "gender": "male",
-            "description": ""
+            "description": "",
+            "picflag": true
+        },
+        {
+            "id": 2,
+            "name": "simone",
+            "email": "example@example.it",
+            "password": "password",
+            "pic": "url",
+            "gender": "male",
+            "description": "",
+            "picflag": true
+        },
+
+        {
+            "id": 3,
+            "name": "loris",
+            "email": "example@example.it",
+            "password": "password",
+            "pic": "url",
+            "gender": "male",
+            "description": "",
+            "picflag": true
+        },
+        {
+            "id": 4,
+            "name": "lauri",
+            "email": "example@example.it",
+            "password": "password",
+            "pic": "url",
+            "gender": "male",
+            "description": "",
+            "picflag": true
         }
+
+
 
 
     ]

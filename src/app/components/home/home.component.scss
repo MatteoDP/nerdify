@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    width: 100%;
+    border: 0px solid red;
+    padding: 1em;
+}
+
+.letter{
+    display: inline-block !important;
+    width: 0.8em;
+}
+
+.card{
+    margin: 0.5em !important;
+}
